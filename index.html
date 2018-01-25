@@ -2,43 +2,39 @@
 <html lang="en">
 
 <head>
-    <title></title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="style.css" rel="stylesheet">
-    <script src="https://use.fontawesome.com/f0d4c8bb8c.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Weather App</title>
+    <meta name="description" content="This web app let users see their local weather. Depending on the weather, the website change icons, colors and data shown.">
+    <meta name="keywords" content="weather, local weather app, weather api, freecodecamp, free code camp, front end development, app, web app">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/7.0.0/normalize.css">
+    <link rel="stylesheet" href="https://websygen.github.io/owfont/css/owfont-regular.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arvo:400,700">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div class="container">
-        <div class="card">
-            <header>
-                <div class="city">Bangalore</div>
-                <div class="search-icon">
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                </div>
-            </header>
-            <div class="current">
-                <div class="icon" data-icon="I"></div>
-                <div class="curTemp">38&deg;</div>
-
-            </div>
-            <div class="forecast">
-                <div class="upcoming">
-                    <span>Tomorrow</span><span>38&deg;</span>
-                    <div class="icon" data-icon="B"></div>
-                </div>
-                <div class="upcoming">
-                    <span>Monday</span><span>38&deg;</span>
-                    <div class="icon" data-icon="O"></div>
-                </div>
-                <div class="upcoming">
-                    <span>Tuesday</span><span>38&deg;</span>
-                    <div class="icon" data-icon="Q"></div>
-                </div>
-            </div>
+    <main class="container">
+        <h1>Local Weather App</h1>
+        <p class="city"></p>
+        <p class="weather">
+            <span class="temperature"></span> |
+            <span class="sky"></span>
+        </p>
+        <button id="toggleTemp">Get Fahrenheit temperature</button>
+        <i id="weatherIcon"></i>
+        <p class="description"></p>
+        <div class="bottom">
+            <p class="bottom-text">Made by
+                <a href="http://www.luigibenvenuti.com/" target="_blank">Vivek Maru</a> -
+                <a href="" target="_blank">GitHub</a>
+                <br> Powered by
+                <a href="https://openweathermap.org/" target="_blank">Open Weather Map</a>
+            </p>
         </div>
-    </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/app.js"></script>
 </body>
-
 </html>
