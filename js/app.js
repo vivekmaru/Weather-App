@@ -1,5 +1,3 @@
-/* developed by luigi benvenuti - luigibenvenuti.com */
-
 $(function () {
   // Global Variables
   var msg = 'It seems like Geolocation, which is required for this page, is not enabled. Please use a browser which supports it.';
@@ -199,6 +197,4 @@ $(function () {
     $posMsg.text(msg);
     $main.prepend($posMsg);
   }
-
-  console.log('developed by luigi benvenuti - http://www.luigibenvenuti.com/');
 });
